@@ -1,0 +1,3 @@
+echo PS1
+PS1='[\d]\u@\h'
+[Tue Sep 10]max@ws01
