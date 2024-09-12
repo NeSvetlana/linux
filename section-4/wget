@@ -1,0 +1,4 @@
+$ which wget
+/usr/bin/wget
+$ dpkg -S /usr/bin/wget
+wget
