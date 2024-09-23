@@ -1,0 +1,1 @@
+/usr/share/doc/gzip$ awk '$1 ~/^[0-9]/' copyright
