@@ -1,0 +1,8 @@
+$ ls -la /home/max/empty/file777
+-rw-rw-r-- 1 max max 12 сен 23 03:52 /home/max/empty/file777
+
+
+$ cd /home/max/empty
+max@ws01:~/empty$ ln -s file777 slink
+max@ws01:~/empty$ ls -li
+1321930 lrwxrwxrwx 1 max max  7 сен 23 12:43 slink -> file777

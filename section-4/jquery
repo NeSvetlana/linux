@@ -1,0 +1,7 @@
+Ищем:
+
+$ apt search jquery highlight
+
+Ставиим:
+
+$ sudo apt install libjs-jquery-jush
