@@ -1,0 +1,4 @@
+$ sudo usermod -a -G sudo alena
+
+$ groups alena
+alena : alena sudo
