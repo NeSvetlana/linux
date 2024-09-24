@@ -1,0 +1,4 @@
+$ sudo groupadd developers
+$ sudo usermod alena -g developers
+$ id alena
+uid=1002(alena) gid=1004(developers) группы=1004(developers),27(sudo)

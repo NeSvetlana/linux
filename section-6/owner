@@ -1,0 +1,2 @@
+$ sudo find ~/owner/ -perm u=r
+/home/max/owner/file541

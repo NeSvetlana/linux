@@ -1,0 +1,18 @@
+$ sudo apt install iptables
+
+$ sudo iptables -L OUTPUT
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             banjo.canonical.com  tcp dpt:http /* kazooie.canonical.com */
+ACCEPT     tcp  --  anywhere             banjo.canonical.com  tcp dpt:http /* banjo.canonical.com */
+ACCEPT     tcp  --  anywhere             us.archive.ubuntu.com  tcp dpt:http /* us.archive.ubuntu.com */
+ACCEPT     tcp  --  anywhere             security.ubuntu.com  tcp dpt:http /* security.ubuntu.com */
+ACCEPT     tcp  --  anywhere             archive.canonical.com  tcp dpt:http /* archive.canonical.com */
+ACCEPT     tcp  --  anywhere             archive.ubuntu.com   tcp dpt:http /* archive.ubuntu.com */
+ACCEPT     tcp  --  anywhere             archive.ubuntu.com   tcp dpt:http /* archive.ubuntu.com */
+ACCEPT     tcp  --  anywhere             archive.ubuntu.com   tcp dpt:http /* archive.ubuntu.com */
+ACCEPT     tcp  --  anywhere             209.85.233.100       tcp dpt:https
+ACCEPT     tcp  --  anywhere             db01                 tcp dpt:mysql
+ACCEPT     tcp  --  anywhere             str01                tcp dpt:http
+DROP       tcp  --  anywhere             anywhere             tcp dpt:http
+DROP       tcp  --  anywhere             anywhere             tcp dpt:https
