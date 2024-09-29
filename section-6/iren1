@@ -1,0 +1,10 @@
+$ sudo groupadd -g 1010 iren
+
+$ getent group | grep iren
+iren:x:1010:
+
+$ sudo useradd -u 1010 -g 1010 -s /bin/dash iren
+$ sudo cat /etc/passwd
+.....
+
+iren:x:1010:1010::/home/iren:/bin/dash
