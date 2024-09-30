@@ -1,0 +1,33 @@
+127.0.0.1       localhost
+127.0.1.1       osboxes
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+10.0.2.20 jump_host
+172.20.236.101 app01
+172.20.236.10 str01
+172.20.235.10 db01
+10.0.2.15 ws01
+209.85.233.138 209.85.233.100 209.85.233.113 209.85.233.101 209.85.233.102 209.>
+185.125.190.83 archive.ubuntu.com
+185.125.188.12 archive.canonical.com
+91.189.91.83 security.ubuntu.com
+91.189.91.81 us.archive.ubuntu.com
+91.189.91.38 banjo.canonical.com
+91.189.91.38 kazooie.canonical.com
+10.0.2.20 jump_host
+172.20.236.101 app01
+172.20.236.10 str01
+172.20.235.10 db01
+10.0.2.15 ws01
+archive.ubuntu.com
+archive.canonical.com
+security.ubuntu.com
+us.archive.ubuntu.com
+banjo.canonical.com
+kazooie.canonical.com
+127.0.0.1 www.google.com
