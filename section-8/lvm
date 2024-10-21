@@ -1,0 +1,9 @@
+sudo pvcreate /dev/vdb /dev/vdb
+sudo vgcreate volume1 /dev/vdb
+sudo lvcreate -l 100% -n storage volume1
+
+mkfs.xfs /dev/volume1/storage
+mkdir /storage
+mount /dev/volume1/storage /storage
+vi /etc/fstab
+/dev/volume1/storage /storage xfs rw 0 0

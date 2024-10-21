@@ -1,0 +1,3 @@
+~sudo fdisk /dev/vdb1
+
+d
