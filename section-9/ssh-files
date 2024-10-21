@@ -1,0 +1,41 @@
+~$ sudo lsof -n -a -c sshd
+lsof: WARNING: can't stat() fuse.portal file system /run/user/1001/doc
+      Output information may be incomplete.
+lsof: WARNING: can't stat() fuse.gvfsd-fuse file system /run/user/1001/gvfs
+      Output information may be incomplete.
+COMMAND PID USER   FD   TYPE             DEVICE SIZE/OFF    NODE NAME
+sshd    770 root  cwd    DIR                8,1     4096       2 /
+sshd    770 root  rtd    DIR                8,1     4096       2 /
+sshd    770 root  txt    REG                8,1   917192 7340344 /usr/sbin/sshd
+sshd    770 root  mem    REG                8,1   149760 7346610 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.32.1
+sshd    770 root  mem    REG                8,1   182912 7341020 /usr/lib/x86_64-linux-gnu/libtirpc.so.3.0.0
+sshd    770 root  mem    REG                8,1    68552 7342222 /usr/lib/x86_64-linux-gnu/libresolv.so.2
+sshd    770 root  mem    REG                8,1    52016 7340053 /usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1
+sshd    770 root  mem    REG                8,1   613064 7342802 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.10.4
+sshd    770 root  mem    REG                8,1  1296312 7346528 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.3.4
+sshd    770 root  mem    REG                8,1  2220400 7342184 /usr/lib/x86_64-linux-gnu/libc.so.6
+sshd    770 root  mem    REG                8,1    22600 7346825 /usr/lib/x86_64-linux-gnu/libkeyutils.so.1.9
+sshd    770 root  mem    REG                8,1   182864 7340417 /usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1
+sshd    770 root  mem    REG                8,1   841808 7347577 /usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8
+sshd    770 root  mem    REG                8,1   827936 7340189 /usr/lib/x86_64-linux-gnu/libkrb5.so.3.3
+sshd    770 root  mem    REG                8,1  4455728 7342056 /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+sshd    770 root  mem    REG                8,1    39024 7340051 /usr/lib/x86_64-linux-gnu/libcap.so.2.44
+sshd    770 root  mem    REG                8,1   125152 7346862 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.3
+sshd    770 root  mem    REG                8,1   170456 7346864 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.5
+sshd    770 root  mem    REG                8,1    27072 7346237 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+sshd    770 root  mem    REG                8,1    93280 7346987 /usr/lib/x86_64-linux-gnu/libnsl.so.2.0.1
+sshd    770 root  mem    REG                8,1    18504 7340288 /usr/lib/x86_64-linux-gnu/libcom_err.so.2.1
+sshd    770 root  mem    REG                8,1   338648 7340203 /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2
+sshd    770 root  mem    REG                8,1   166280 7347227 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+sshd    770 root  mem    REG                8,1   198664 7346296 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+sshd    770 root  mem    REG                8,1   108936 7340533 /usr/lib/x86_64-linux-gnu/libz.so.1.2.11
+sshd    770 root  mem    REG                8,1   807936 7345284 /usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0
+sshd    770 root  mem    REG                8,1    67736 7340192 /usr/lib/x86_64-linux-gnu/libpam.so.0.85.1
+sshd    770 root  mem    REG                8,1   133200 7346142 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+sshd    770 root  mem    REG                8,1    44872 7347493 /usr/lib/x86_64-linux-gnu/libwrap.so.0.7.6
+sshd    770 root  mem    REG                8,1   240936 7342170 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+sshd    770 root    0r   CHR                1,3      0t0       5 /dev/null
+sshd    770 root    1u  unix 0xffff9ff1079b2400      0t0    8279 type=STREAM
+sshd    770 root    2u  unix 0xffff9ff1079b2400      0t0    8279 type=STREAM
+sshd    770 root    3u  IPv4               8320      0t0     TCP *:ssh (LISTEN)
+sshd    770 root    4u  IPv6               8325      0t0     TCP *:ssh (LISTEN)
